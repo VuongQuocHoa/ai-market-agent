@@ -1,5 +1,12 @@
 # Dự án: AI Agent tóm tắt tin tức thị trường (MVP)
 
+<div align="center">
+
+[![Live Demo on Render](https://img.shields.io/badge/🌐_Live_Demo-Render-00f0ff?style=for-the-badge&logo=render&logoColor=white)](https://vuongquochoa-ai-market-agent.onrender.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/VuongQuocHoa/ai-market-agent)
+
+</div>
+
 Cách dùng nhanh:
 
 1. Tạo file `.env` theo mẫu:
