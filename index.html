@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autonomous Market News AI Agent — LangChain & Telegram Dispatcher</title>
+    <title>Autonomous Market News AI Agent — LangChain & Telegram Dispatcher Terminal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
                         <span class="text-[10px] bg-cyan-950 text-cyan-300 font-mono px-2 py-0.5 rounded border border-cyan-800">LangChain</span>
                         <span class="text-[10px] bg-emerald-950 text-emerald-300 font-mono px-2 py-0.5 rounded border border-emerald-800">Telegram Bot</span>
                     </div>
-                    <p class="text-xs text-slate-400">Trợ lý cào tin tức thị trường tài chính tự động, phân tích tâm lý & bắn Telegram</p>
+                    <p class="text-xs text-slate-400">Autonomous Financial Intelligence Crawler, Sentiment Analyzer &amp; Telegram Dispatcher</p>
                 </div>
             </div>
             <div class="flex items-center gap-3">
@@ -61,11 +61,11 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
                 <div class="flex justify-between items-center text-xs text-slate-400 font-mono">
-                    <span>VN-INDEX</span>
+                    <span>S&amp;P 500</span>
                     <span class="text-emerald-400 font-bold">LIVE</span>
                 </div>
-                <div class="text-xl font-bold text-emerald-400 font-mono mt-1">1,288.42 <span class="text-xs">▲ +1.4%</span></div>
-                <p class="text-[11px] text-slate-500 mt-1">Dòng tiền lan tỏa mạnh nhóm CK & Bank</p>
+                <div class="text-xl font-bold text-cyan-400 font-mono mt-1">5,864.67 <span class="text-xs text-emerald-400">▲ +0.8%</span></div>
+                <p class="text-[11px] text-slate-500 mt-1">Tech rally led by Semiconductor and AI CapEx</p>
             </div>
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
                 <div class="flex justify-between items-center text-xs text-slate-400 font-mono">
@@ -73,15 +73,15 @@
                     <span class="text-emerald-400 font-bold">LIVE</span>
                 </div>
                 <div class="text-xl font-bold text-emerald-400 font-mono mt-1">$68,450 <span class="text-xs">▲ +3.2%</span></div>
-                <p class="text-[11px] text-slate-500 mt-1">Phản ứng tích cực sau công bố lạm phát</p>
+                <p class="text-[11px] text-slate-500 mt-1">Bullish breakout following CPI cooling reports</p>
             </div>
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
                 <div class="flex justify-between items-center text-xs text-slate-400 font-mono">
-                    <span>S&amp;P 500</span>
+                    <span>NASDAQ 100</span>
                     <span class="text-emerald-400 font-bold">LIVE</span>
                 </div>
-                <div class="text-xl font-bold text-cyan-400 font-mono mt-1">5,864.67 <span class="text-xs">▲ +0.8%</span></div>
-                <p class="text-[11px] text-slate-500 mt-1">Tech rally dẫn dắt bởi NVIDIA & Apple</p>
+                <div class="text-xl font-bold text-emerald-400 font-mono mt-1">20,388.10 <span class="text-xs">▲ +1.2%</span></div>
+                <p class="text-[11px] text-slate-500 mt-1">Broad institutional inflows across AI hardware</p>
             </div>
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
                 <div class="flex justify-between items-center text-xs text-slate-400 font-mono">
@@ -89,7 +89,7 @@
                     <span class="text-emerald-400 font-bold">IDLE</span>
                 </div>
                 <div class="text-xl font-bold text-white font-mono mt-1">&lt; 2.5s <span class="text-xs text-slate-400">Analysis Latency</span></div>
-                <p class="text-[11px] text-emerald-400 mt-1">Telegram Dispatcher Connected</p>
+                <p class="text-[11px] text-emerald-400 mt-1">Telegram Dispatcher Active</p>
             </div>
         </div>
 
@@ -99,10 +99,10 @@
             <div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-2xl p-5 space-y-4">
                 <div class="flex justify-between items-center border-b border-slate-800 pb-3">
                     <h2 class="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-                        <span>📰 Tin Tức Vừa Cào &amp; Bóc Tách Sentiment (LangChain Pipeline)</span>
+                        <span>📰 Real-Time Feed &amp; LangChain Sentiment Extraction</span>
                     </h2>
                     <button onclick="triggerSimulateNews()" class="px-3 py-1 rounded-xl text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 hover:bg-cyan-500/30 transition">
-                        ⚡ Cào Tin Mới
+                        ⚡ Trigger Scrape
                     </button>
                 </div>
 
@@ -110,30 +110,30 @@
                     <!-- Item 1 -->
                     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (Tích Cực) • Score: +88</span>
-                            <span class="text-[11px] text-slate-500 font-mono">10 phút trước</span>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (+88% Score)</span>
+                            <span class="text-[11px] text-slate-500 font-mono">10 mins ago</span>
                         </div>
-                        <h3 class="text-sm font-bold text-slate-100">Ngân hàng Nhà nước hạ lãi suất tái cấp vốn, dòng vốn dồi dào chảy mạnh vào thị trường chứng khoán</h3>
+                        <h3 class="text-sm font-bold text-slate-100">Central Bank lowers benchmark refinancing rate, accelerating equity market liquidity</h3>
                         <p class="text-xs text-slate-400 leading-relaxed">
-                            <strong>LangChain Key Takeaway:</strong> Giảm chi phí vốn cho doanh nghiệp sản xuất và kích thích thanh khoản sàn HOSE vượt ngưỡng 25.000 tỷ/phiên.
+                            <strong>LangChain Key Takeaway:</strong> Decreased corporate borrowing costs are forecast to accelerate industrial earnings, lifting financial and manufacturing equities.
                         </p>
                         <div class="flex items-center gap-2 text-[11px] text-cyan-400 font-mono pt-1">
-                            <span>Mã hưởng lợi: VCB, SSI, HPG, MBB</span>
+                            <span>Key Catalysts: Banking, Real Estate, Industrial Materials</span>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (Tích Cực) • Score: +92</span>
-                            <span class="text-[11px] text-slate-500 font-mono">35 phút trước</span>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (+92% Score)</span>
+                            <span class="text-[11px] text-slate-500 font-mono">35 mins ago</span>
                         </div>
-                        <h3 class="text-sm font-bold text-slate-100">FPT ký kết biên bản hợp tác trị giá 200 triệu USD phát triển trung tâm AI Factory bán dẫn tại Nhật Bản</h3>
+                        <h3 class="text-sm font-bold text-slate-100">Tech enterprise signs $200M semiconductor AI Factory expansion partnership</h3>
                         <p class="text-xs text-slate-400 leading-relaxed">
-                            <strong>LangChain Key Takeaway:</strong> Khẳng định năng lực xuất khẩu phần mềm AI cao cấp, biên lợi nhuận ròng dự báo tăng 18% trong Q4.
+                            <strong>LangChain Key Takeaway:</strong> Validates Tier-1 software export capability into overseas data center markets; operating margin projected to expand 18% YoY.
                         </p>
                         <div class="flex items-center gap-2 text-[11px] text-cyan-400 font-mono pt-1">
-                            <span>Mã hưởng lợi: FPT, FOX</span>
+                            <span>Key Catalysts: Semiconductor, Data Infrastructure, Enterprise AI</span>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         </div>
                         <div>
                             <h2 class="text-sm font-bold text-white">AI Market Signals Channel</h2>
-                            <p class="text-[11px] text-slate-400">12,450 subscribers • Telegram Bot</p>
+                            <p class="text-[11px] text-slate-400">12,450 subscribers • Automated Bot</p>
                         </div>
                     </div>
                     <span class="text-[10px] bg-cyan-950 text-cyan-400 px-2 py-0.5 rounded font-mono border border-cyan-800">DISPATCHER</span>
@@ -163,26 +163,26 @@
                             <span>10:24 AM</span>
                         </div>
                         <p class="font-bold text-slate-100 leading-snug">
-                            🔥 [BẢN TIN NHANH]: Ngân hàng Nhà nước hạ lãi suất điều hành!
+                            🔥 [MARKET BRIEFING]: Central Bank Lowers Benchmark Interest Rates!
                         </p>
                         <div class="bg-black/40 p-2.5 rounded-lg font-mono text-[11px] space-y-1">
                             <div>• <strong>Sentiment:</strong> <span class="text-emerald-400">BULLISH (+88%)</span></div>
-                            <div>• <strong>Tác động:</strong> Thanh khoản TTCK tăng vọt</div>
-                            <div>• <strong>Mã tiêu điểm:</strong> #VCB #SSI #HPG</div>
+                            <div>• <strong>Impact:</strong> Accelerated Equity Inflows</div>
+                            <div>• <strong>Leading Equities:</strong> #FIN #TECH #MATERIALS</div>
                         </div>
-                        <div class="text-[10px] text-slate-400 text-right">Tự động phân tích bởi LangChain Agent</div>
+                        <div class="text-[10px] text-slate-400 text-right">Autonomous analysis by LangChain Agent</div>
                     </div>
                 </div>
 
                 <div class="p-3 bg-[#17212b] border-t border-slate-800 text-center text-xs text-slate-400">
-                    Bắn thông báo tự động tới điện thoại nhà đầu tư trong &lt; 2 giây
+                    Dispatches formatted mobile briefings to subscribers in &lt; 2 seconds
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="mt-8 border-t border-slate-900 py-6 text-center text-xs text-slate-500">
-        Autonomous Market News AI Agent Architecture • Kỹ sư: <strong>Vương Quốc Hòa</strong> (@VuongQuocHoa) • LangChain & OpenAI & Telegram Dispatcher
+        Autonomous Market News AI Agent Architecture • Systems Engineer: <strong>Vuong Quoc Hoa</strong> (@VuongQuocHoa) • LangChain &amp; Telegram Bot
     </footer>
 
     <script>
@@ -190,21 +190,21 @@
             const feed = document.getElementById("newsFeed");
             const tgFeed = document.getElementById("telegramFeed");
 
-            const time = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+            const time = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
 
             const newCard = document.createElement("div");
             newCard.className = "bg-slate-950 p-4 rounded-xl border border-cyan-500/50 space-y-2 animate-pulse";
             newCard.innerHTML = `
                 <div class="flex justify-between items-start">
-                    <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (Tích Cực) • Score: +95</span>
-                    <span class="text-[11px] text-cyan-400 font-mono">Vừa cào xong (Vừa xong)</span>
+                    <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-mono">BULLISH (+95% Score)</span>
+                    <span class="text-[11px] text-cyan-400 font-mono">Ingested Just Now</span>
                 </div>
-                <h3 class="text-sm font-bold text-slate-100">Xuất khẩu thủy sản và sầu riêng Việt Nam đạt kỷ lục 9.5 tỷ USD, tăng trưởng 32% so với cùng kỳ</h3>
+                <h3 class="text-sm font-bold text-slate-100">National agricultural exports reach all-time high of $9.5B, surging 32% YoY</h3>
                 <p class="text-xs text-slate-400 leading-relaxed">
-                    <strong>LangChain Key Takeaway:</strong> Nhu cầu từ thị trường Trung Quốc và Mỹ tiếp tục mở rộng, biên lợi nhuận ròng các doanh nghiệp xuất khẩu bứt phá.
+                    <strong>LangChain Key Takeaway:</strong> High demand from international markets continues expansion; net profit margins of listed exporters forecast to accelerate.
                 </p>
                 <div class="flex items-center gap-2 text-[11px] text-cyan-400 font-mono pt-1">
-                    <span>Mã hưởng lợi: VHC, ANV, HAG</span>
+                    <span>Key Catalysts: Logistics, Cold Chain, Agri-Commodities</span>
                 </div>
             `;
             feed.prepend(newCard);
@@ -213,7 +213,6 @@
                 newCard.classList.remove("animate-pulse");
                 newCard.classList.remove("border-cyan-500/50");
 
-                // Dispatch to Telegram
                 const tgCard = document.createElement("div");
                 tgCard.className = "bg-[#182533] p-3.5 rounded-2xl rounded-bl-sm border border-cyan-500/40 space-y-2 text-slate-200";
                 tgCard.innerHTML = `
@@ -222,14 +221,14 @@
                         <span>${time}</span>
                     </div>
                     <p class="font-bold text-slate-100 leading-snug">
-                        🚀 [BẢN TIN NHANH]: Xuất khẩu nông sản lập đỉnh mới 9.5 tỷ USD!
+                        🚀 [MARKET BRIEFING]: Agricultural Export Volume Surges 32% YoY!
                     </p>
                     <div class="bg-black/40 p-2.5 rounded-lg font-mono text-[11px] space-y-1">
                         <div>• <strong>Sentiment:</strong> <span class="text-emerald-400">BULLISH (+95%)</span></div>
-                        <div>• <strong>Tác động:</strong> Cổ phiếu xuất khẩu tăng trần</div>
-                        <div>• <strong>Mã tiêu điểm:</strong> #VHC #ANV #HAG</div>
+                        <div>• <strong>Impact:</strong> Export Equities Advance</div>
+                        <div>• <strong>Leading Equities:</strong> #EXPORTS #AGRI #LOGISTICS</div>
                     </div>
-                    <div class="text-[10px] text-slate-400 text-right">Tự động phân tích bởi LangChain Agent</div>
+                    <div class="text-[10px] text-slate-400 text-right">Autonomous analysis by LangChain Agent</div>
                 `;
                 tgFeed.prepend(tgCard);
                 tgFeed.scrollTop = 0;
